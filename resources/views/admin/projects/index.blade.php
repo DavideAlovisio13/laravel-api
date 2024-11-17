@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('title', 'Projects')
 
-@section('content')
+{{-- @section('content')
     <section id="projects" class="container-fluid">
         @if (session()->has('message'))
             <div class="alert alert-success">{{ session()->get('message') }}</div>
@@ -56,7 +56,7 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        {{$projects->links('vendor.pagination.bootstrap-5')}}
+                        {{ $projects->links('vendor.pagination.bootstrap-5') }}
                     </div>
                     <a href="{{ route('admin.projects.create') }}" class="btn btn-danger">Create a new post</a>
                 </div>
@@ -76,17 +76,20 @@
                         <div class="row pt-4 fs-1 text-white">
                             <div
                                 class="col social_card my-4 d-flex flex-column justify-content-center align-content-center">
-                                <a href="https://github.com/DavideAlovisio13"><i class="fa-brands fa-github fa-2xl text-danger"></i></a>
+                                <a href="https://github.com/DavideAlovisio13"><i
+                                        class="fa-brands fa-github fa-2xl text-danger"></i></a>
                                 <h4 class="pt-3">GitHub</h4>
                             </div>
                             <div
                                 class="col social_card my-4 d-flex flex-column justify-content-center align-content-center">
-                                <a href="https://it-it.facebook.com/index.php/"><i class="fa-brands fa-facebook fa-2xl text-danger"></i></a>
+                                <a href="https://it-it.facebook.com/index.php/"><i
+                                        class="fa-brands fa-facebook fa-2xl text-danger"></i></a>
                                 <h4 class="pt-3">Facebook</h4>
                             </div>
                             <div
                                 class="col social_card my-4 d-flex flex-column justify-content-center align-content-center">
-                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl text-danger"></i></a>
+                                <a href="https://www.instagram.com/"><i
+                                        class="fa-brands fa-instagram fa-2xl text-danger"></i></a>
                                 <h4 class="pt-3">Instagram</h4>
                             </div>
                             <div
@@ -115,4 +118,8 @@
         </div>
     </section>
     @include('partials.modal-delete');
+@endsection --}}
+
+@section('content')
+
 @endsection
